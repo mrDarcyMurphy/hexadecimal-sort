@@ -26,6 +26,9 @@ describe('hexidecimal-sort', function() {
   it('compares really big hex values', function() {
     assert.equal(hexer('51b0efbc995c95091c000104', '51b0efbc995c95091c00010e'), -1)
   })
+  it('compares really big, yet different sized hex values', function() {
+    assert.equal(hexer('351b0efbc995c95091c000104', '51b0efbc995c95091c00010e'), 1)
+  })
   it('returns 0 when values are the same', function() {
     assert.equal(hexer('51b0efbc995c95091c000104', '51b0efbc995c95091c000104'), 0)
   })
