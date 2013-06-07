@@ -1,22 +1,21 @@
 {
   "name": "hexadecimal-sort",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "sort big hexes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/mrDarcyMurphy/hexadecimal-sort.git"
   },
   "keywords": [
-    "sorting"
+    "sorting", "hexadecimal"
   ],
   "author": "Mr. Darcy Murphy",
   "license": "WTFPL",
   "readmeFilename": "README.md",
-  "gitHead": "a27e9501a24a6ff7c1c2c04c5bf1beb777cd1ca4",
   "devDependencies": {
     "mocha": "~1.10.0"
   }
