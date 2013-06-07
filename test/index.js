@@ -7,7 +7,10 @@ describe('hexidecimal-sort', function() {
       hexer(null)
     })
     assert.throws(function(){
-      hexer('nope', 'foo')
+      hexer('nope', 'f')
+    })
+    assert.throws(function(){
+      hexer('0xfff', '0x')
     })
   })
   it('compares hex values that start with `0x`', function() {
